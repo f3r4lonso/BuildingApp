@@ -1,0 +1,50 @@
+[
+  {
+    "WorkerId": 1,
+    "WorkerName": "Maria Florencia",
+    "WorkerTasks": [
+      {
+        "FloorNumber": 5,
+        "TimeInHours": 3,
+        "Description": "Sacando Fotocopias"
+      },
+      {
+        "FloorNumber": 4,
+        "TimeInHours": 3,
+        "Description": "Estudiando Casos"
+      }
+    ]
+  },
+  {
+    "WorkerId": 2,
+    "WorkerName": "Pablo Dias",
+    "WorkerTasks": [
+      {
+        "FloorNumber": 3,
+        "TimeInHours": 1,
+        "Description": "Sacando Fotocopias"
+      },
+      {
+        "FloorNumber": 5,
+        "TimeInHours": 7,
+        "Description": "Reunion General"
+      }
+    ]
+  },
+  {
+    "WorkerId": 3,
+    "WorkerName": "Carla Tello",
+    "WorkerTasks": [
+      {
+        "FloorNumber": 3,
+        "TimeInHours": 6,
+        "Description": "Sacando Fotocopias"
+      },
+      {
+        "FloorNumber": 6,
+        "TimeInHours": 2,
+        "Description": "Reunion con RRHH"
+      }
+    ]
+  }
+]
