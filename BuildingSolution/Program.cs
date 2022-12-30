@@ -1,16 +1,22 @@
-﻿using System.ComponentModel.Design;
-using System.Threading;
-using System.Threading.Tasks;
-using static Program;
+﻿using BuildingSolution.Service;
 
 internal class Program
 {
+
+    static readonly IBildingService bildingService = new BildingService();
+
+    static readonly IWorkerDataLoader workerDataLoader = new WorkerDataLoader();
+
+    static List<Worker> workers;
+
+    static Building building;
+
     private static void Main(string[] args)
     {
-        List<Worker> workers = Repository.Service.LoadData.LoadDataFromJson();
+        workers = workerDataLoader.GetWorkers();
 
-        Building building = new Building(workers);
+        building = bildingService.CreateBuilding(workers);
 
-        building.SetUpDailyWork();
+        int threadCount = bildingService.SetUpDailyWork(building);
     }
 }

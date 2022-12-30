@@ -19,10 +19,6 @@ namespace Repository.Service
             string rootPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string jsonPath = Path.Combine(rootPath,"Data", "Data.json");
 
-
-            //string jsonPath = "Repository/Data/Data.json";
-            //string fullPath = Path.GetFullPath(jsonPath);|
-
             using (StreamReader reader = new StreamReader(jsonPath))
             {
                 jsonString = reader.ReadToEnd();
